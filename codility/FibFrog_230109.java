@@ -1,5 +1,3 @@
-package codility;
-
 public class FibFrog_230109 {
     public static void main(String[] args) {
         FibFrog_230109 f = new FibFrog_230109();

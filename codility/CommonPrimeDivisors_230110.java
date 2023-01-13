@@ -1,5 +1,3 @@
-package codility;
-
 public class CommonPrimeDivisors_230110 {
     public static void main(String[] args) {
         CommonPrimeDivisors_230110 c = new CommonPrimeDivisors_230110();

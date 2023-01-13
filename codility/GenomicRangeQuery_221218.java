@@ -1,5 +1,3 @@
-package codility;
-
 public class GenomicRangeQuery_221218 {
     public static void main(String[] args) {
         

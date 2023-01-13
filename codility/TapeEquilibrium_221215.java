@@ -1,5 +1,3 @@
-package codility;
-
 class TapeEquilibrium_221215 {
     public static void main(String[] args) {
         int [] A = {3,1,2,4,3};

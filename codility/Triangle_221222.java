@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.Arrays;
 
 public class Triangle_221222 {

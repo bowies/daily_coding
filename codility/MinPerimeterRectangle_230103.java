@@ -1,5 +1,3 @@
-package codility;
-
 public class MinPerimeterRectangle_230103 {
     public static void main(String[] args) {
         int N = 30;

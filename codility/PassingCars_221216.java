@@ -1,5 +1,3 @@
-package codility;
-
 public class PassingCars_221216 {
     
     public static void main(String[] args) {

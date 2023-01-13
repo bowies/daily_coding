@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.Arrays;
 
 public class NumberOfDiscIntersections_221223 {

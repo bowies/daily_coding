@@ -1,5 +1,3 @@
-package codility;
-
 public class ChocolatesByNumbers_230108 {
     public static void main(String[] args) {
         ChocolatesByNumbers_230108 c = new ChocolatesByNumbers_230108();

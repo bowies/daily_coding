@@ -1,5 +1,3 @@
-package codility;
-
 public class Ladder_230111 {
     public static void main(String[] args) {
         Ladder_230111 l = new Ladder_230111();

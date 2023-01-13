@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.ArrayList;
 
 public class Flags_230104 {

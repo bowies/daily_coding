@@ -1,5 +1,3 @@
-package codility;
-
 public class MaxSliceSum_221231 {
     public static void main(String[] args) {
         int [] A  = {3,2,-6,4,0};

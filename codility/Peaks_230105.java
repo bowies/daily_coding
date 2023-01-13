@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.ArrayList;
 import java.util.List;
 

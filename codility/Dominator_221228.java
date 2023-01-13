@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.HashMap;
 
 public class Dominator_221228 {

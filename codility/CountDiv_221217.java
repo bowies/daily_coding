@@ -1,5 +1,3 @@
-package codility;
-
 public class CountDiv_221217 {
     
     public static void main(String[] args) {

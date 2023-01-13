@@ -1,5 +1,3 @@
-package codility;
-
 public class MinAvgTwoSlice_221219 {
     public static void main(String[] args) {
 

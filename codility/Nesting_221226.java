@@ -1,5 +1,3 @@
-package codility;
-
 import java.util.Stack;
 
 public class Nesting_221226 {
