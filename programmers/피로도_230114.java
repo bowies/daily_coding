@@ -5,7 +5,7 @@ public class 피로도_230114 {
         int k = 80;
         int [][] dungeons = {{80,20},{50,40},{30,10}};
         System.out.println(solution(k, dungeons));
-        System.out.println(solution2(k, dungeons));
+        //System.out.println(solution2(k, dungeons));
     }
     
     static boolean[] visited;  
