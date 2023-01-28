@@ -3,7 +3,9 @@ public class CountConformingBitmasks_230128 {
         int A = 1073741727;
         int B = 1073741631;
         int C = 1073741679;
-        System.out.println(solution(A,B,C)); //https://app.codility.com/demo/results/trainingGU6U7V-YQ9/
+        //https://github.com/ahmadaghazadeh/Challenges/blob/master/Codibility/CountConformingBitmasks/CountConformingBitmasks.java
+
+        System.out.println(solution(A,B,C));
 
     }
 
