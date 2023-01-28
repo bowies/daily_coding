@@ -3,47 +3,38 @@ public class CountConformingBitmasks_230128 {
         int A = 1073741727;
         int B = 1073741631;
         int C = 1073741679;
-        System.out.println(solution(A,B,C));
+        System.out.println(solution(A,B,C)); //https://app.codility.com/demo/results/trainingGU6U7V-YQ9/
+
     }
 
-    public static int solution(int A, int B, int C) {
-        int count = 0;
-        int max = 1073741823;
-        int min = Integer.MAX_VALUE;
+        public static int solution(int A, int B, int C) {
 
-        if(min > A){
-            min = A;
-        }
-        if(min > B){
-            min = B;
-        }
-        if(min > C){
-            min = C;
-        }
+            int answer = 0;
+            String aStr = Integer.toBinaryString(A);
+            String bStr = Integer.toBinaryString(B);
+            String cStr = Integer.toBinaryString(C);
 
-        for(int i=min; i<=max; i++){
-            if(conform(i, A) || conform(i, B) || conform(i, C)){
-                count++;
+            answer =  checkBit(aStr)+ checkBit(bStr)+ checkBit(cStr);
+            answer -= checkBit(Integer.toBinaryString(A|B));
+            answer -= checkBit(Integer.toBinaryString(A|C));
+            answer -= checkBit(Integer.toBinaryString(B|C));
+            answer += checkBit(Integer.toBinaryString(A|B|C));
+
+            return answer;
+        }
+        private static int checkBit(String number){
+
+            int count=0;
+
+            for (int i = 0; i < number.length(); i++) {
+                if(number.charAt(i)=='0'){
+                    count++;
+                }
             }
+
+            count += 30 - number.length();//★
+            return (int)Math.pow(2, count);
         }
-        return count;
-    }
 
 
-    public static boolean conform(int num1, int num2){
-        String[] num1Str = Integer.toBinaryString(num1).split("");
-        String[] num2Str = Integer.toBinaryString(num2).split("");
-
-        for(int i = 0; i < num2Str.length; i++){
-            String num2Bit = num2Str[i];
-            if(num2Bit.equals("0")){
-                continue;
-            }
-            String num1Bit = num1Str[i];
-            if(!num2Bit.equals(num1Bit)){
-                return false;
-            }
-        }
-        return true;
-    }
 }
