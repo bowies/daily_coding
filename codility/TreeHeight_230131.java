@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class TreeHeight_230131 {
     public static void main(String[] args) {
 
+        Tree T = null;
         System.out.println(solution(T));
     }
 
@@ -46,4 +49,9 @@ public class TreeHeight_230131 {
         return height;
     }
 
+    private static class Tree {
+        //오류를 없애고자 자동 생성
+        public Tree l;
+        public Tree r;
+    }
 }
