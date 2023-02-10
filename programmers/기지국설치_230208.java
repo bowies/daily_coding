@@ -9,7 +9,7 @@ public class 기지국설치_230208 {
         int [] stations = {4,11};
         int W = 1;
 
-        System.out.println(solution(n, stations, W))
+        System.out.println(solution(n, stations, W));
     }
 
     public static int solution(int n, int[] stations, int w) {

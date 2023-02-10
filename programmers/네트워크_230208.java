@@ -28,7 +28,7 @@ public class 네트워크_230208 {
         System.out.println(solution(n, computers));
     }
 
-    public int solution(int n, int[][] computers) {
+    public static int solution(int n, int[][] computers) {
         int answer = 0;
         boolean [] visit = new boolean[n];
 
