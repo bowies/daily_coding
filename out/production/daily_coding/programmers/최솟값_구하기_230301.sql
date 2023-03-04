@@ -1,0 +1,7 @@
+SELECT
+    MIN(DATETIME)
+FROM
+    ANIMAL_INS
+ORDER BY
+    DATETIME;
+-- sql을 하나씩 풀어보기
