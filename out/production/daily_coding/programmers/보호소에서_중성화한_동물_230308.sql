@@ -1,0 +1,13 @@
+SELECT
+    ANIMAL_INS.ANIMAL_ID, ANIMAL_INS.ANIMAL_TYPE, ANIMAL_INS.NAME
+FROM
+    ANIMAL_INS JOIN ANIMAL_OUTS
+WHERE
+        ANIMAL_INS.ANIMAL_ID = ANIMAL_OUTS.ANIMAL_ID
+  AND
+    ANIMAL_INS.SEX_UPON_INTAKE != ANIMAL_OUTS.SEX_UPON_OUTCOME
+ORDER BY ANIMAL_INS.ANIMAL_ID
+-- 동물 보호소에서 입양 보낼 때는 중성화 되지 않았음
+-- 동물 보호소에서 입양 보낼 때에는 중성화 됨
+-- 따라서 상태가 변경된 것이므로 중성화 됨 
+-- 이미 없는 애 -> 그것을 부활 시킬 수 없음
