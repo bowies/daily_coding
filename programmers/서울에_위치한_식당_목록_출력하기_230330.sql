@@ -1,0 +1,45 @@
+--Mysql
+SELECT
+    R.REST_ID,
+    I.REST_NAME,
+    I.FOOD_TYPE,
+    I.FAVORITES,
+    I.ADDRESS,
+    ROUND(AVG(R.REVIEW_SCORE),2) AS SCORE
+FROM
+    REST_REVIEW R
+        JOIN
+    REST_INFO I
+    ON
+            R.REST_ID = I.REST_ID
+GROUP BY
+    R.REST_ID
+HAVING
+        I.ADDRESS
+        LIKE '서울%'
+ORDER BY
+    SCORE DESC,
+    I.FAVORITES DESC
+
+--Oracle
+SELECT
+    I.REST_ID,
+    I.REST_NAME,
+    I.FOOD_TYPE,
+    I.FAVORITES,
+    I.ADDRESS,
+    R.SCORE
+FROM
+    REST_INFO I
+        INNER JOIN (
+        SELECT REST_ID, ROUND(AVG(REVIEW_SCORE), 2) SCORE
+        FROM REST_REVIEW
+        GROUP BY REST_ID
+    ) R
+                   ON
+                           I.REST_ID = R.REST_ID
+WHERE
+        I.ADDRESS LIKE '서울%'
+ORDER BY
+    R.SCORE DESC,
+    I.FAVORITES DESC
