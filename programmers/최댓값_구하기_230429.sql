@@ -1,0 +1,10 @@
+--Mysql
+SELECT
+    MAX(DATETIME)
+FROM
+    ANIMAL_INS
+--Oracle
+SELECT
+    MAX(DATETIME)
+FROM
+    ANIMAL_INS
