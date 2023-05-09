@@ -15,4 +15,9 @@ public class 각도기_230509 {
        }
         return answer;
     }
+
+
+    public int sol2(int angle){
+        return angle == 180 ? 4 : angle < 90 ? 1 : angle == 90 ? 2 : angle > 90 ? 3 : 0;
+    }
 }
