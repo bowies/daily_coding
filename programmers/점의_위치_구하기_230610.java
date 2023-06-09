@@ -38,4 +38,15 @@ class 점의_위치_구하기_230610 {
             return 0; // 점이 원점인 경우
         }
     }
+
+    public int solution3(int [] dot){
+        int x = dot[0];
+        int y = dot[1];
+
+        if (x > 0)
+            return y > 0 ? 1 : 4;
+        else
+            return y > 0 ? 2 : 3;
+
+    }
 }
