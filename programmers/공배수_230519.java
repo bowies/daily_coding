@@ -1,7 +1,8 @@
+package programmers;
+
 import java.util.stream.IntStream;
 
-package programmers;
-class Solution {
+class 공배수_230519 {
     public int solution(int number, int n, int m) {
         return (number % n == 0 && number % m == 0) ? 1 : 0;
     }
@@ -12,4 +13,3 @@ class Solution {
     }
 }
 
-}

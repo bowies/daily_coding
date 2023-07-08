@@ -1,4 +1,6 @@
-class Solution {
+package programmers;
+
+class 아이스_아메리카노_230613 {
     public int[] solution(int money) {
         int[] answer = new int[2];
         int coffee = 5500;

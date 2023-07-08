@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-class Solution {
+class 정수_찾기_230523 {
     public int solution(int[] num_list, int n) {
         return Arrays.stream(num_list).anyMatch(i -> i == n) ? 1 : 0;
     }

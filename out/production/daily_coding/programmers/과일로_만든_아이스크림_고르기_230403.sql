@@ -1,0 +1,29 @@
+--Oracle
+SELECT
+    F.FLAVOR
+FROM
+    FIRST_HALF F
+        RIGHT JOIN
+    ICECREAM_INFO I
+    ON F.FLAVOR = I.FLAVOR
+WHERE
+        F.TOTAL_ORDER > 3000
+  AND
+        I.INGREDIENT_TYPE = 'fruit_based'
+ORDER BY
+    F.TOTAL_ORDER DESC
+
+--Mysql
+SELECT
+    F.FLAVOR
+FROM
+    FIRST_HALF F
+        JOIN
+    ICECREAM_INFO I
+    ON F.FLAVOR = I.FLAVOR
+WHERE
+        F.TOTAL_ORDER > 3000
+  AND
+        I.INGREDIENT_TYPE = "fruit_based"
+ORDER BY
+    F.TOTAL_ORDER DESC

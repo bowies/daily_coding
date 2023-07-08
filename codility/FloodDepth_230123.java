@@ -37,7 +37,7 @@ public class FloodDepth_230123{
 
         함수 작성:
 
-        class Solution { public int solution(int[] A); }
+        class 공배수_230519 { public int solution(int[] A); }
 
         N개의 정수로 구성된 비어 있지 않은 배열 A가 주어지면 최대 수심을 반환합니다.
 

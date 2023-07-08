@@ -1,0 +1,45 @@
+--MYSQL
+SELECT
+    APP.APNT_NO,
+    P.PT_NAME,
+    P.PT_NO,
+    D.MCDP_CD,
+    D.DR_NAME,
+    APP.APNT_YMD
+FROM
+    APPOINTMENT APP
+        JOIN PATIENT P
+             ON APP.PT_NO = P.PT_NO
+        JOIN DOCTOR D
+             on APP.MDDR_ID = D.DR_ID
+where
+        D.MCDP_CD = "CS"
+  AND
+        APP.APNT_YMD LIKE "%2022-04-13%"
+  AND
+        APP.APNT_CNCL_YN = "N"
+ORDER BY
+    APP.APNT_YMD;
+
+--ORACLE
+SELECT
+    APP.APNT_NO,
+    P.PT_NAME,
+    P.PT_NO,
+    D.MCDP_CD,
+    D.DR_NAME,
+    APP.APNT_YMD
+FROM
+    APPOINTMENT APP
+        JOIN PATIENT P
+             ON APP.PT_NO = P.PT_NO
+        JOIN DOCTOR D
+             on APP.MDDR_ID = D.DR_ID
+WHERE
+        TO_CHAR(APP.APNT_YMD, 'YYYYMMDD') = '20220413'
+  AND
+        APP.APNT_CNCL_YN = 'N'
+  AND
+    APP.APNT_CNCL_YMD IS NULL
+ORDER BY
+    APP.APNT_YMD

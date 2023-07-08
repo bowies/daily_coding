@@ -58,7 +58,7 @@ public class MinAbsSumOfTwo_230119{
         쌍 (2, 2)에 대한 2의 절대합은 A[2] + A[2] = |(−3) + (−3)| = 6.
         함수 작성:
 
-        class Solution { public int solution(int[] A); }
+        class 공배수_230519 { public int solution(int[] A); }
 
         N개의 정수로 구성된 비어 있지 않은 배열 A가 주어지면 이 배열의 인덱스 쌍에 대해 최소 절대합 2를 반환합니다.
 

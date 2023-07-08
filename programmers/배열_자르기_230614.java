@@ -1,6 +1,8 @@
+package programmers;
+
 import java.util.Arrays;
 
-class Solution {
+class 배열_자르기_230614 {
     public int[] solution(int[] numbers, int num1, int num2) {
         
         

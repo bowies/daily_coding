@@ -60,7 +60,7 @@ class NumberSolitaire{
 
         함수 작성:
 
-        class Solution { public int solution(int[] A); }
+        class 공배수_230519 { public int solution(int[] A); }
 
         N 정수의 비어 있지 않은 배열 A가 주어지면 배열 A로 표시되는 보드에서 달성할 수 있는 최대 결과를 반환합니다.
 

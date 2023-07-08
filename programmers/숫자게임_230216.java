@@ -4,11 +4,6 @@ import java.util.Arrays;
 
 public class 숫자게임_230216 {
 
-    public static void main(String[] args) {
-
-    }
-
-    class Solution {
         public int solution(int[] A, int[] B) {
 
             Arrays.sort(A);
@@ -33,5 +28,4 @@ public class 숫자게임_230216 {
             return answer;
 
         }
-    }
 }

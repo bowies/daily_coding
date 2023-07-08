@@ -5,7 +5,7 @@ public class Distinct_221220 {
     /*
     함수 작성
 
-    class Solution { public int solution(int[] A); }
+    class 공배수_230519 { public int solution(int[] A); }
 
     N개의 정수로 구성된 배열 A가 주어지면 배열 A의 개별 값 수를 반환합니다.
 

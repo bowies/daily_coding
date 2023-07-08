@@ -3,7 +3,7 @@ package programmers;
 import java.util.Arrays;
 import java.util.stream.IntStream; 
 
-class Solution {
+class 배열_뒤집기_230526 {
     public int[] solution_Intstream(int[] num_list) {
         return IntStream.range(0, num_list.length)
                 .map(i -> num_list[num_list.length - 1 - i])

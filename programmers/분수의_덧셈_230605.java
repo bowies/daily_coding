@@ -1,3 +1,5 @@
+package programmers;
+
 import java.util.Arrays;
 
 public class 분수의_덧셈_230605 {
@@ -76,6 +78,3 @@ public class 분수의_덧셈_230605 {
     */
 }
 
-	
-
-}
