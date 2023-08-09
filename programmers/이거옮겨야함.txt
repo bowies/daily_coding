@@ -3,6 +3,9 @@ import java.util.Arrays;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/86051/solution_groups?language=java
 
+//예로부터 내려온 방식을 타파하는게 아니라 내 머리를 조금 더 잘 쓰는 방향으로...
+
+
 
 class Solution {
     public int solution(int[] numbers) {
@@ -33,6 +36,11 @@ class Solution {
             sum -= i;
         }
         return sum;
+    }
+
+
+    public int solution3(int[] numbers) {
+        return 45-Arrays.stream(numbers).sum();
     }
 
 }
