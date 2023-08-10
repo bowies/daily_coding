@@ -1,6 +1,5 @@
 package programmers
 
-
 import java.util.Arrays;
 
 public class 인사_고과_Java_230810 {
