@@ -1,6 +1,6 @@
 package programmers;
 
-class Solution {
+class 배열_만들기_1_Kotlin_230830 {
 
 
     fun solution(n: Int, k: Int): IntArray {
