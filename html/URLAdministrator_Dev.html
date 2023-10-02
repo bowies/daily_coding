@@ -101,11 +101,31 @@
                 var iframe = document.createElement("iframe");
                 iframe.src = urls[i];
 
-                // iframe을 화면에 추가
-                urlDisplayDiv.appendChild(iframe);
+                if(urls[i].includes("privatebin.net")){
+                    openInNewTab(urls[i]);
+
+                    var privateDiv = document.createElement("div");
+                    privateDiv.innerHTML =  "<br><br><br><br><br>" + urls[i] + "<br><br>privatebin은 화면 내 추가가 불가능하여<br>새 탭으로 이동합니다.";
+                    privateDiv.style.color = "#fff"; // 텍스트 색상 설정
+                    privateDiv.style.width = "300px";
+                    privateDiv.style.height = "300px";
+                    privateDiv.style.border = "1px solid #555"; // 다크 모드에서 사용할 테두리 색상
+                    privateDiv.style.margin = "10px"; // 각 iframe 사이의 간격 설정
+                    privateDiv.style.overflow = "hidden"; // 텍스트가 div 요소 내에서만 보이도록 설정
+
+
+                    urlDisplayDiv.appendChild(privateDiv);
+                }else{
+
+                    // iframe을 화면에 추가
+                    urlDisplayDiv.appendChild(iframe);
+                }
+
 
                 // 배열에 iframe 추가
                 iframeList.push(iframe);
+
+
             }
         } else {
             alert("추출된 URL이 없습니다.");
