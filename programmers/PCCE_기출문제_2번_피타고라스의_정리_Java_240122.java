@@ -10,6 +10,7 @@ class PCCE_기출문제_2번_피타고라스의_정리_Java_240122 {
 
         int b_square = c*c - a*a;
 
+
         System.out.println(b_square);
     }
 }
