@@ -2,18 +2,11 @@ package programmers;
 
 import java.util.Arrays;
 
-class Solution {
+class 문자열_정렬하기_2_Java_240213 {
     public String solution(String my_string) {
-        // 문자열을 모두 소문자로 변환
         my_string = my_string.toLowerCase();
-        
-        // 문자열을 문자 배열로 변환
-        char[] charArray = my_string.toCharArray();
-        
-        // 문자 배열을 오름차순으로 정렬
-        Arrays.sort(charArray);
-        
-        // 정렬된 문자 배열을 다시 문자열로 변환하여 반환
-        return new String(charArray);
+        char[] arr = my_string.toCharArray();
+        Arrays.sort(arr);
+        return new String(arr);
     }
 }
