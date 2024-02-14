@@ -1,10 +1,11 @@
-package programmers
+package programmers;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 
-class Solution {
+class 소인수분해_Java_231011 {
     public int[] solution(int n) {
         if (isPrime(n)) {
             int[] answer = {n};
