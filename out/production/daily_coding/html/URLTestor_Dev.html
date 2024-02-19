@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a.html</title>
+</head>
+<body>
+<div id="content"></div>
+
+<script>
+    //231003 : github 보안으로 인해 사용 불가 소스
+
+    // XMLHttpRequest를 사용하여 원격 파일을 로드
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://raw.githubusercontent.com/bowies/daily_coding/main/html_release/URLAdministrator.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // 요청이 완료되면 가져온 HTML 내용을 div 요소에 삽입
+            document.getElementById('content').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+</body>
+</html>
