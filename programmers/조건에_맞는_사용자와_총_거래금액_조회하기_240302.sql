@@ -1,0 +1,66 @@
+--Ansi SQL
+SELECT
+    U.USER_ID,
+    U.NICKNAME,
+    SUM(B.PRICE) AS TOTAL_SALES
+FROM
+    USED_GOODS_BOARD B
+JOIN
+    USED_GOODS_USER U ON B.WRITER_ID = U.USER_ID
+WHERE
+    B.STATUS = 'DONE'
+GROUP BY
+    U.USER_ID,
+    U.NICKNAME
+HAVING
+    SUM(B.PRICE) >= 700000
+ORDER BY
+    TOTAL_SALES;
+
+
+-- MySQL 쿼리에서는 HAVING 절에서 TOTAL_SALES를 직접 사용한다
+-- Oracle 쿼리에서는 HAVING 절에서 SUM(PRICE)를 사용한다
+-- ansi sql에서는 oracle 쿼리처럼 SUM(PRICE)를 사용한다.
+-- HAVING 절에서는 집계 함수의 결과 또는 그룹화된 열만 사용할 수 있다.
+
+--Mysql
+SELECT
+    USER_ID,
+    NICKNAME,
+    SUM(PRICE) AS TOTAL_SALES
+FROM
+    USED_GOODS_BOARD AS B
+        JOIN
+    USED_GOODS_USER AS U
+    ON
+            B.WRITER_ID = U.USER_ID
+WHERE
+        STATUS = 'DONE' #완료된 중고 거래
+GROUP BY
+    USER_ID
+HAVING
+    TOTAL_SALES >= 700000 #총금액 70만원 이상
+ORDER BY
+    TOTAL_SALES ASC;
+
+
+--Oracle
+SELECT
+    U.USER_ID AS USER_ID,
+    U.NICKNAME AS NICKNAME,
+    SUM(B.PRICE) AS TOTAL_SALES
+FROM
+    USED_GOODS_BOARD B
+        JOIN
+    USED_GOODS_USER U
+    ON
+            B.WRITER_ID = U.USER_ID
+WHERE
+        STATUS = 'DONE'
+GROUP BY
+    USER_ID,
+    NICKNAME
+HAVING
+        SUM(PRICE) >= 700000
+ORDER BY
+    TOTAL_SALES
