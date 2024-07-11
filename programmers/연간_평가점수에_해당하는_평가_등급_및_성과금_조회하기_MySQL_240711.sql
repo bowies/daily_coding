@@ -1,0 +1,26 @@
+SELECT
+    E.EMP_NO,
+    E.EMP_NAME,
+    CASE
+        WHEN IH.AVG_SCORE >= 96 THEN 'S'
+        WHEN IH.AVG_SCORE >= 90 THEN 'A'
+        WHEN IH.AVG_SCORE >= 80 THEN 'B'
+        ELSE 'C'
+        END AS GRADE,
+    CASE
+        WHEN IH.AVG_SCORE >= 96 THEN E.SAL * 0.20
+        WHEN IH.AVG_SCORE >= 90 THEN E.SAL * 0.15
+        WHEN IH.AVG_SCORE >= 80 THEN E.SAL * 0.10
+        ELSE 0
+        END AS BONUS
+FROM
+    HR_EMPLOYEES E
+    JOIN
+        (SELECT EMP_NO, AVG(SCORE) AS AVG_SCORE
+         FROM HR_GRADE
+         WHERE YEAR = 2022
+         GROUP BY EMP_NO) IH
+    ON
+        E.EMP_NO = IH.EMP_NO
+ORDER BY
+    E.EMP_NO;
