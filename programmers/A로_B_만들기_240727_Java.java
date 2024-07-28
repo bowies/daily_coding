@@ -1,29 +1,15 @@
 package programmers;
-class 숨어있는_숫자의_덧셈_2_240726_Java {
-    public int solution(String my_string) {
-        int answer = 0;
-        int current = 0;
-        boolean flag = false;
 
-        for (int i = 0; i < my_string.length(); i++) {
-            char c = my_string.charAt(i);
+import java.util.Arrays;
 
-            if (Character.isDigit(c)) {
-                current = current * 10 + (c - '0');
-                flag = true;
-            } else {
-                if (flag) {
-                    answer += current;
-                    current = 0;
-                }
-                flag = false;
-            }
-        }
+class A로_B_만들기_240727_Java {
 
-        if (flag) {
-            answer += current;
-        }
+    public int solution(String before, String after) {
+        char[] bArr = before.toCharArray();
+        char[] aArr = after.toCharArray();
+        Arrays.sort(bArr);
+        Arrays.sort(aArr);
 
-        return answer;
+        return Arrays.equals(bArr, aArr) ? 1 : 0;
     }
 }
