@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Scanner;
 
-class PCCE_기출문제_3번_아날로그_시계_Java_240125.java {
+class PCCE_기출문제_3번_아날로그_시계_Java_240125 {
     
     public static int solution(int h1, int m1, int s1, int h2, int m2, int s2) {
         return 시계돌리기(h2, m2, s2) - 시계돌리기(h1, m1, s1) + ((s1 == 0 && m1 == 0) ? 1 : 0);
