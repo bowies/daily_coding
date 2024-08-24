@@ -2,25 +2,23 @@ package programmers;
 
 import java.util.Arrays;
 
-class Solution {
+class K번째_수_Java_240811 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
-        
-        for (int idx = 0; idx < commands.length; idx++) {
-            int i = commands[idx][0];
-            int j = commands[idx][1];
-            int k = commands[idx][2];
-            
-            // array에서 i-1부터 j까지 자르기
-            int[] subArray = Arrays.copyOfRange(array, i-1, j);
-            
-            // 자른 배열 정렬
-            Arrays.sort(subArray);
-            
-            // k번째 수를 answer 배열에 저장
-            answer[idx] = subArray[k-1];
+
+        for (int i = 0; i < commands.length; i++) {
+            int a = commands[i][0];
+            int b = commands[i][1];
+            int c = commands[i][2];
+
+            int[] temp = Arrays.copyOfRange(array, a - 1, b);
+            //부분 배열 만드는 copyOfRange!!!
+
+            Arrays.sort(temp);
+
+            answer[i] = temp[c - 1];
         }
-        
+
         return answer;
     }
 }
