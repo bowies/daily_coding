@@ -3,7 +3,7 @@ package programmers;
 
 import java.util.HashMap;
 
-class Solution {
+class 최빈값_구하기_Java_240921 {
     public int solution(int[] array) {
         HashMap<Integer, Integer> 빈도 = new HashMap<>();
         
