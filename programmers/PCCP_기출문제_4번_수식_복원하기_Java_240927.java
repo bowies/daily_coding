@@ -4,6 +4,7 @@ import java.util.*;
 
 class PCCP_기출문제_4번_수식_복원하기_Java_240927 {
     public String[] solution(String[] expressions) {
+        //분석 하다가 가시성이 높은 코드여서 확인 하려고 가져왔다.
         // 2~9진법 파악
         // 해당되는 진법이 여러개면 ?, 아니면 해당 진법으로 값 생성
         String[][] 수식들 = new String[expressions.length][5];
