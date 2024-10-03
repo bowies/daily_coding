@@ -16,6 +16,7 @@ class  PCCE_기출문제_9번_지폐_접기_Java_241003 {
             answer++;  // 접을 때마다 횟수 증가
         }
 
+
         return answer;
     }
 }
