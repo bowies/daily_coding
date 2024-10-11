@@ -2,7 +2,8 @@ package programmers;
 
 
 class 신규_아이디_생성_Java_241011 {
-    public String solution(String new_id) {
+    
+    public String solution(String new_id) { 
         String answer = new_id.toLowerCase();
         answer = answer.replaceAll("[^a-z0-9-_.]", "");
         answer = answer.replaceAll("\\.{2,}", ".");

@@ -3,6 +3,7 @@ package programmers;
 import java.util.HashMap;
 
 class 성격_유형_검사하기_Java_241011 {
+    
     public String solution(String[] survey, int[] choices) {
         HashMap<Character, Integer> scores = new HashMap<>();
         scores.put('R', 0);
