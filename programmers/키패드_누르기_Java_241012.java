@@ -1,6 +1,7 @@
 package programmers;
 
 class 키패드_누르기_Java_241012 {
+    
     private static final int[][] 키패드 = {
         {3, 1}, // 0의 좌표
         {0, 0}, // 1의 좌표
