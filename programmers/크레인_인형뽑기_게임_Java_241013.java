@@ -2,6 +2,7 @@ package programmers;
 import java.util.Stack;
 
 class 크레인_인형뽑기_게임_Java_241013 {
+    
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         Stack<Integer> basket = new Stack<>(); 
