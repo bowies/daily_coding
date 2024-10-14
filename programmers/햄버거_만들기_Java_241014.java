@@ -3,6 +3,7 @@ package programmers;
 import java.util.Stack;
 
 class 햄버거_만들기_Java_241014 {
+    
     public int solution(int[] ingredient) {
         int answer = 0;
         Stack<Integer> stack = new Stack<>();
