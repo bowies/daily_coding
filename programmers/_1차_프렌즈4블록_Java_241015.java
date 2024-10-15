@@ -1,6 +1,7 @@
 package programmers;
 
 class _1차_프렌즈4블록_Java_241015 {
+    
     public int solution(int m, int n, String[] board) {
         char[][] map = new char[m][n];
         for (int i = 0; i < m; i++) {
