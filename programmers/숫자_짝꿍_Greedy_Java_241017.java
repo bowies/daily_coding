@@ -1,7 +1,7 @@
 package programmers;
 import java.util.*;
 
-class 숫자_짝꿍_Greedy_Java_241017 {
+class 숫자_짝꿍_Greedy_Java_241017 { 
     public String solution(String X, String Y) {
         int[] countX = new int[10];
         int[] countY = new int[10];
