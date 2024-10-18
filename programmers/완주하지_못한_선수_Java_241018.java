@@ -3,7 +3,7 @@ package programmers;
 import java.util.HashMap;
 
 class 완주하지_못한_선수_Java_241018 {
-
+ 
     public String solution(String[] participant, String[] completion) {
         HashMap<String, Integer> map = new HashMap<>();
         
