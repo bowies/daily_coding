@@ -1,6 +1,6 @@
 package programmers;
 
-class _2_x_n_타일링_Java_241019 {
+class _2_x_n_타일링_Java_241019 { 
 
     public int solution(int n) {
         int 나누기 = 1_000_000_007;
