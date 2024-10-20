@@ -1,6 +1,6 @@
 package programmers;
 
-class 문자열_나누기_Java_241020 {
+class 문자열_나누기_Java_241020 { 
     public int solution(String s) {
         int answer = 0;
         int i = 0;
