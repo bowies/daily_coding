@@ -1,7 +1,7 @@
 package programmers;
 import java.util.*;
 
-class _3차_파일명_정렬_Java_241021 {
+class _3차_파일명_정렬_Java_241021 { 
     public String[] solution(String[] files) {
         Arrays.sort(files, new Comparator<String>() {
             @Override
