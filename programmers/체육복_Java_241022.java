@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.*;
 
-class 체육복_Java_241022 {
+class 체육복_Java_241022 { 
     public int solution(int n, int[] lost, int[] reserve) {
         List<Integer> lostList = new ArrayList<>();
         List<Integer> reserveList = new ArrayList<>();
