@@ -1,6 +1,6 @@
 package programmers;
 
-class PCCE_기출문제_7번_버스_Java_241023 {
+class PCCE_기출문제_7번_버스_Java_241023 { 
     public int solution(int seat, String[][] passengers) {
         int num_passenger = 0;
         for(int i=0; i<passengers.length; i++){
